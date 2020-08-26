@@ -1,0 +1,24 @@
+
+/*CRIANDO DATABASE*/
+
+create database comercio
+default charset utf8
+default collate utf8_general_ci;
+
+/*CRIANDO TABELA PRODUTOS*/
+
+create table produtos(
+id_prod int(11) not null auto_increment primary key,
+nome_prod varchar(30) not null,
+desc_prod varchar(50),
+data_prod datetime not null
+)default charset = utf8;
+
+/*CRIANDO TABELA DESTINATARIO*/
+
+create table destinatario(
+id_dest int(11) not null auto_increment primary key,
+nome_dest varchar(40) not null,
+cpf_dest int(11) not null,
+data_entrega datetime not null
+)default charset = utf8;
